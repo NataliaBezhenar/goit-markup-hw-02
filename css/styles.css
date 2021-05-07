@@ -60,17 +60,36 @@ body {
 
 /* ********** BUTTONS ********** */
 
-.btn-full {
-  background-color: var(--accent-color);
+.btn {
   border-radius: 4px;
-  color: var(--primary-white-color);
-  padding: 10px 32px;
-  border: 1px solid var(--accent-color);
-  font-size: 16px;
-  line-height: 1.86;
+  cursor: pointer;
   font-family : inherit;
+  font-size: 16px;
+}
+
+.btn-hero {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  border: 1px solid var(--accent-color);
+  line-height: 1.86;
   letter-spacing: 0.06em;
   font-weight: 700;
+}
+
+.btn-filter {
+  background-color: var(--background-grey-color);
+  color: var(--primary-text-color);
+  border: 1px solid var(--background-grey-color);
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.btn-filter:focus,
+.btn-filter:hover {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  color: var(--primary-white-color);
 }
 /* ********** END BUTTONS ********** */
 
