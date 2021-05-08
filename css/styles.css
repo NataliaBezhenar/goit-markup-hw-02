@@ -27,7 +27,14 @@ body {
 .auth-list-link {
   font-size: 14px;
   font-weight: 500;
+}
+
+.main-nav-link {
   color: var(--primary-text-color);
+}
+
+.auth-list-link {
+  color: var(--grey-text-color);
 }
 
 .main-nav-link:hover,
@@ -36,6 +43,10 @@ body {
 .auth-list-link:focus,
 .footer-contact-link:hover,
 .footer-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
   color: var(--accent-color);
 }
 /* ********** END HEADER ********** */
@@ -68,6 +79,7 @@ body {
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 }
 
 .btn-hero {
@@ -75,7 +87,6 @@ body {
   letter-spacing: 0.06em;
   font-weight: 700;
   color: var(--primary-white-color);
-  border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
 }
 
@@ -84,7 +95,6 @@ body {
   letter-spacing: 0.03em;
   font-weight: 500;
   color: var(--primary-text-color);
-  border: 1px solid var(--background-grey-color);
   background-color: var(--background-grey-color);
 }
 
@@ -92,7 +102,6 @@ body {
 .btn-filter:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
 /* ********** END BUTTONS ********** */
 
@@ -136,6 +145,20 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ******* END COMPONENTS ******* */
 
 /* ********** TEAM ********** */
@@ -178,19 +201,22 @@ body {
 
 /* ********* FOOTER ********** */
 .footer {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   background-color: var(--hero-background-color);
 }
 
-.studio-location {
+.address {
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.studio-location {
   color: var(--primary-white-color);
 }
 
 .footer-contact-link {
-  font-style: normal;
+
   color: rgba(255, 255, 255, 0.6);
 }
 /* ********* END FOOTER ********** */
